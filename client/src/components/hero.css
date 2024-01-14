@@ -1,0 +1,66 @@
+.hero{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1.5rem;
+    color: var(--secondary);
+    padding-top: 3.5rem;
+    background-color: rgba(26,36,48,.7);
+}
+.heroTitleNDesc{
+    display: flex;
+    width: 75%;
+    height: 30%;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.heroTitle{
+    display: flex;
+    width: 100%;
+    height: 50%;
+    justify-content: flex-start;
+    padding-left: 2rem;
+}
+.heroDesc{
+    display: flex;
+    width: 100%;
+    height: 50%;
+    justify-content: flex-end;
+    padding-left: 20rem;
+}
+.heroTitle > h1{
+    font-size: 50px;
+    font-weight: 700;
+}
+.heroDesc > p{
+    font-size: 20px;
+    font-weight: 500;
+}
+.heroQuote{
+    display: flex;
+    width: 100%;
+    height: 70%;
+    justify-content: center;
+    align-items: center;
+}
+.heroQuoteText{
+    display: flex;
+    width: 50%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.heroQuoteText::before{
+    content: "";
+    width: 15px;
+    height:100px;
+    background-color: var(--secondary);
+    margin-right: 2rem;
+}
+.heroQuoteText > p {
+    font-size: 40px;
+    font-weight: 700;
+}

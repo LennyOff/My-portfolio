@@ -1,0 +1,112 @@
+.contact{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    padding: 5rem 2rem;
+}
+form{
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+.contactInfos{
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid var(--secondary);
+    width: 50%;
+    gap: 2rem;
+}
+.contactInfosTitle{
+    position: relative;
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: var(--secondary);
+}
+.contactInfosTitle::after{
+    position: absolute;
+    content: "";
+    width: 10rem;
+    height: 10px;
+    background-color: orangered;
+    bottom: -20px;
+}
+.contactInfosTitle > h1{
+    font-size: 60px;
+    font-weight: 700;
+}
+.contactInfosInputs{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 50%;
+    height: 80%;
+}
+.contactInfosInputs > input{
+    background: none;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    font-size: 20px;
+    color: var(--secondary);
+}
+.contactInfosInputs > input:focus{
+    outline: none;
+}
+.contactInfosInputs > label{
+    font-size: 26px;
+    color: var(--secondary);
+}
+.contactMessage{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+    padding: 1rem;
+}
+
+.contactMessageText{
+    display: flex;
+    flex-direction: column;
+}
+.contactMessageText > textarea{
+    background: none;
+    font-size: 20px;
+    color: var(--secondary);
+}
+.contactMessageText > textarea:focus{
+    outline: none;
+}
+.contactMessageText > label{
+    font-size: 26px;
+    color: var(--secondary);
+}
+.contactButton{
+    width: 100%;
+    height: 5rem;
+    color: var(--secondary);
+    background-color: orangered;
+    border: none;
+}
+
+@media (max-width: 780px) {
+    .contactInfosTitle > h1{
+        font-size: 40px;
+        font-weight: 900;
+    }
+    .contactInfosTitle::after{
+        width: 4rem;
+        height: 5px;
+    }
+}
+
+@media (max-width: 450px){
+    .contact{
+        height: 80vh;
+        width: 100vw;
+        display: flex;
+        padding: 5rem 2rem;
+    }
+}

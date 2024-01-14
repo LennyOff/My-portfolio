@@ -1,0 +1,25 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+:root{
+  --primary : rgba(26,36,48,.7);
+  --secondary : rgb(232,220,197);
+}
+.maindiv{
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  overflow: hidden;
+  scroll-timeline: none;
+  justify-content: center;
+  align-items: center;
+}
+body{
+  scrollbar-width: none;  /* Firefox */
+}
+body::-webkit-scrollbar {
+  display: none;
+}

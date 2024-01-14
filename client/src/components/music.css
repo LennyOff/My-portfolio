@@ -1,0 +1,140 @@
+.music{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    padding-top: 3.5rem;
+}
+.musicTitle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.musicTitle > h1{
+    padding: .5rem .5rem;
+    border-radius: .5rem;
+    background-color: var(--secondary);
+    color: rgba(26,36,48,1);
+    font-size: 35px;
+    font-weight: 700;
+}
+.musicContent{
+    display: flex;
+    width: 100%;
+    height: 80%;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+}
+.musicPlayer1{
+    position: fixed;
+    top: 25%;
+    right: 2rem;
+}
+
+.musicPlayer0{
+    position: absolute;
+    top: -20px;
+    right: 42px;
+}
+.big{
+    display: flex;
+    height: 20rem;
+    background-color: rgba(0,0,0,.2);
+    border: 2px solid var(--secondary);
+    border-radius: .5rem;
+    flex-direction: column; 
+    align-items: center;
+    overflow: hidden;
+    gap: 2rem;
+    transition: transform .5s linear;
+}
+.small{
+    display: flex;
+    height: 20rem;
+    background-color: rgba(0,0,0,.2);
+    border: 2px solid var(--secondary);
+    border-radius: .5rem;
+    flex-direction: column; 
+    align-items: center;
+    overflow: hidden;
+    transition: transform .5s linear;
+}
+.small > .musicInfos{
+    display: none;
+}
+.line .wrapper {
+    background-color: rgb(35, 35, 135);
+    width: 2px;
+    height: 100%;
+    transform-origin: bottom;
+    transform: scaleY(0);
+    transition: transform 1.4s linear;
+}
+.small > .musicBars{
+    padding-top: .5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .1rem;
+    width: 100%;
+    height: 100%;
+}
+.musicControls{
+    padding-bottom: 2rem;
+}
+.small > .musicBars > div{
+    width: .3rem;
+    height: 50%;
+}
+.big > .musicBars{
+    display: none;
+}
+.small .musicCover{
+    width: 12rem;
+    border-bottom: 1px solid var(--secondary);
+    background-size: contain;
+}
+.big > .musicCover{
+    width: 12rem;
+    border-bottom: 1px solid var(--secondary);
+    background-size:cover;
+}
+.musicInfos{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: .5rem;
+}
+.musicArtist{
+    color: var(--secondary);
+    font-size: 20px;
+    font-weight: 700;
+}
+.musicName{
+    color: var(--secondary);
+    font-size: 16px;
+    font-weight: 500;
+}
+.musicDesc{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+    line-height: 20px;
+    width: 50%;
+}
+.musicDesc > p{
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--secondary);
+}
+.hard{
+    font-weight: 900;
+    color: rgba(252,240,217);
+}

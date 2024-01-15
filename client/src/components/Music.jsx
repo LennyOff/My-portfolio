@@ -80,8 +80,8 @@ const Music = () => {
      <motion.div onClick={handleClick} style={{width:width, translateY: translateValueY,translateX: translateValueX }} className={style} >
        <motion.div className='musicCover' style={{height:height,backgroundImage:`url(${musicCover})`,backgroundPosition:'center',backgroundRepeat:'no-repeat'}}></motion.div>
        <div className='musicInfos'>
-            <h1 className='musicArtist'>DaGuy</h1>
-            <h1 className='musicName'>DaZik</h1>
+            <h1 className='musicArtist'>Ai generated</h1>
+            <h1 className='musicName'>Winter mood</h1>
        </div>
        <div className='musicBars'>
         <VerticalLine tempo={70}/>

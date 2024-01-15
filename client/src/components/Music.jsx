@@ -94,7 +94,7 @@ const Music = () => {
      </motion.div>
      <div className='musicDesc'>
         <p>Here's some <span className='hard'>ambiant music</span> (turn up volume) to entertain you a little bit while looking at my stuff.</p>
-        <p>This is a <span className='hard'>AI Generated</span> music made with a <span className='hard'>summer theme</span>.</p>
+        <p>This is a <span className='hard'>AI Generated</span> music.</p>
      </div>
    </div>
    <audio ref={musicRef} loop src={AiMusic} />

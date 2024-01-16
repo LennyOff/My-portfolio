@@ -16,6 +16,7 @@
   scroll-timeline: none;
   justify-content: center;
   align-items: center;
+  background-image: url(../assets/grid.svg);
 }
 body{
   scrollbar-width: none;  /* Firefox */

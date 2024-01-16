@@ -4,7 +4,6 @@
     height: 3rem;
     display: flex;
     align-items: center;
-    background-color: rgba(26,36,48,.7);
 }
 .headerProfileIcon{
     width: 24px;
